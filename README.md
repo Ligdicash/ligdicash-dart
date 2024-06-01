@@ -11,7 +11,7 @@ Ajoutez cette ligne à votre fichier `pubspec.yaml` :
 
 ```yaml
 dependencies:
-  ligdicash: ^1.0.2
+  ligdicash: ^1.0.1
 ```
 
 Puis, exécutez :

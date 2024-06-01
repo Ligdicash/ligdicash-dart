@@ -1,6 +1,6 @@
 name: ligdicash
 description: Librairie Dart pour manipuler l'API de Ligdicash
-version: 1.0.2
+version: 1.0.1
 # repository: https://github.com/my_org/my_repo
 
 environment:
