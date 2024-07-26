@@ -5,3 +5,7 @@
 ## 1.0.1
 
 - CI/CD setup.
+
+## 1.0.2
+
+- Fix payout.
