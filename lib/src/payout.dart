@@ -67,7 +67,10 @@ class Withdrawal extends HTTPProvider {
         ? WikiType.client_payout
         : WikiType.merchant_payout;
 
-    final response = await this.post("withdrawal/create", payload, feature);
+    final response = await this.post(
+        type == WithdrawalType.client ? "withdrawal/create" : "straight/payout",
+        payload,
+        feature);
     final responseData = BaseResponse.fromJson(response);
     return responseData;
   }

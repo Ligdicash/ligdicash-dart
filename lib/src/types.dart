@@ -10,4 +10,4 @@ enum TransactionStatus { pending, completed, nocompleted }
 /// Enum pour le type de retrait
 enum WithdrawalType { client, merchant }
 
-enum TransactionType { payin, payout }
+enum TransactionType { payin, client_payout, merchant_payout }

@@ -146,7 +146,7 @@ Pour obtenir une transaction, vous devez fournir le token de la transaction.
 
 ```dart
 final transactionToken = 'eyJ0eXAiOiJ...pZCI6IjY';
-final transaction = await client.getTransaction(token: transactionToken, type: TransactionType.payin); // "payin" ou "payout"
+final transaction = await client.getTransaction(token: transactionToken, type: TransactionType.payin); // "TransactionType.payin" ou "TransactionType.client_payout" ou "TransactionType.merchant_payout"
 final status = transaction.status;
 if (status == TransactionStatus.completed) {
   // La transaction a été effectuée avec succès

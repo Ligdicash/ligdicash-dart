@@ -30,7 +30,9 @@ Future<StatusResponse> getTransaction({
   );
   String endpoint = (type == TransactionType.payin)
       ? "redirect/checkout-invoice/confirm/?invoiceToken=$token"
-      : "withdrawal/confirm/?withdrawalToken=$token";
+      : type == TransactionType.client_payout
+          ? "withdrawal/confirm/?withdrawalToken=$token"
+          : "straight/payout/confirm/?payoutToken=$token";
 
   final response = await provider.get(endpoint, WikiType.status);
 
